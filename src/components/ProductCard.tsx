@@ -11,7 +11,7 @@ export default function ProductCard({ product }: ProductCardProps) {
     Date.now() - new Date(product.createdAt).getTime() < 100 * 60 * 60 * 24 * 7;
   return (
     <Link
-      href={`/product/${product.id}`}
+      href={`/products/${product.id}`}
       className="card w-full bg-base-100 transition-shadow hover:shadow-xl"
     >
       <figure>
